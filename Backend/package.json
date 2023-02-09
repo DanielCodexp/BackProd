@@ -12,14 +12,17 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "bcryptjs": "^2.4.3",
     "class-validator": "^0.11.1",
     "cors": "^2.8.5",
     "express": "^4.15.4",
     "helmet": "^3.23.3",
+    "https": "^1.0.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.10",
+    "save": "^2.9.0",
     "ts-node": "^8.10.2",
     "typeorm": "^0.2.25"
   },
