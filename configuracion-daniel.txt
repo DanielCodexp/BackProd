@@ -1,0 +1,94 @@
+instalacion de node js 
+
+en la terminal 
+wget https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-x64.tar.gz
+
+despues se descomprime el archivo descargado 
+
+tar xvfz node-v16.13.0-linux-x64.tar.gz
+
+se copian los binarios en la carpeta bin (en dado caso que no este, se crea la carpeta, con el siguiente comando)
+
+mkdir ~/bin
+
+el siguiente comando copia los archivos de la carpeta que se descomprimio 
+
+cp node-v16.13.0-linux-x64/bin/node ~/bin
+
+2.	Ejecuta lo siguiente para agregar el PATH local(dentro de la carpeta bin): 
+
+sed -i '/PATH=\$PATH:\$HOME\/bin/d' ~/.bashrc
+sed -i '/export PATH/d' ~/.bashrc
+echo 'PATH=$PATH:$HOME/bin' >> ~/.bashrc
+echo 'export PATH' >> ~/.bashrc
+PATH=$PATH:$HOME/bin
+export PATH
+
+3.	Verifica si funciona correctamente 
+
+node -v
+npm -v
+
+
+*************************************Observaciones************************************
+para poder comprobar si funciona correctamente el host o vps, se debe de tener un dominio que verdaderamente 
+exista, ya que si se crea un dominio a la asar no se podra visualizar nada.
+
+El archivo generado por el comando ng build, crea una carpeta llamada dis en ella estara otra carpeta con el nombre del proyecto.
+
+Para subir el proyecto se deben copiar los archivos generados en public html, sin carpetas. solo los archivos
+
+una vez que se pueda ver el front- se pasa a configurar el backend. 
+ se crea una base de datos. (con un usuario)
+en el codigo de configuracion de backend. se cambia el nombre de la base de datos, junto con el usuario
+y la contraseña. una vez que esten todos estos ajustes listos levantar el servidor node.
+
+
+para levantar el servidor. 
+se ingresa desde la Terminal al proyecto backen y se ingresa el siguiente comando "npm run dev"
+una vez que el servicio este levantado probar las apis si funcionan.
+si las apis funcionan checar que sea la misma url que tiene el front.
+si no son las mismas, se modifica desde la carpeta de enviroment.
+en la enviroment.prod.
+
+NOMBRE DE BASE DE DATOS:
+user2test2023_almacen
+USUARIO ROOT:
+user2test2023_root
+CONTRASEÑA DE BD:
+jrDQ2?G[1u]$
+
+
+
+para probar la api 
+
+
+http://mantenimientoadic.ddns.net:3000/products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOMBRE DE BASE DE DATOS:
+user2test2023_almacen
+USUARIO ROOT:
+user2test2023_root
+CONTRASEÑA DE BD:
+jrDQ2?G[1u]$
